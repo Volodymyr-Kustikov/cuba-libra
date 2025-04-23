@@ -1,9 +1,16 @@
+
 import { Image, StyleSheet, Platform } from 'react-native';
 
 import { HelloWave } from '@/components/HelloWave';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
+
+import {AppRegistry} from 'react-native';
+import App from '../../src/App';
+import {name as appName} from '../../app.json';
+
+AppRegistry.registerComponent(appName, () => App);
 
 export default function HomeScreen() {
   return (
