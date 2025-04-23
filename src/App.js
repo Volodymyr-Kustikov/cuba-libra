@@ -4,8 +4,6 @@ import { SafeAreaView, StatusBar, Text, StyleSheet, View, PermissionsAndroid, Pl
 import GlucoseMonitor from './GlucoseMonitor';
 
 // Request necessary permissions for Android
-
-
 const requestPermissions = async () => {
   if (Platform.OS === 'android') {
     try {
